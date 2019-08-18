@@ -1,0 +1,11 @@
+zuul:
+  ignoredServices: "*"
+  prefix: /api
+  routes:    
+    conversion-service:
+      path: /conversion/**
+      sensitiveHeaders:
+    exchange-service:
+      path: /exchange/**
+      sensitiveHeaders:      
+  retryable: false
